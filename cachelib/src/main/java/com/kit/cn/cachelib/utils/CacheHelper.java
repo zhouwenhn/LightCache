@@ -1,4 +1,4 @@
-package com.chowen.lightcache.utils;
+package com.kit.cn.cachelib.utils;
 
 import android.annotation.TargetApi;
 import android.os.Build;

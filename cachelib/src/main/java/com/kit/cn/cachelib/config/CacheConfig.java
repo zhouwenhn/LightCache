@@ -1,7 +1,7 @@
-package com.chowen.lightcache.config;
+package com.kit.cn.cachelib.config;
 
 
-import com.chowen.lightcache.CacheApplication;
+import com.kit.cn.cachelib.CacheApplication;
 
 import java.io.File;
 

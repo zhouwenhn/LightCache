@@ -1,9 +1,9 @@
-package com.chowen.lightcache.biz;
+package com.kit.cn.cachelib.biz;
 
 import android.support.annotation.NonNull;
 import android.support.v4.util.LruCache;
 
-import com.chowen.lightcache.utils.CheckException;
+import com.kit.cn.cachelib.utils.CheckException;
 
 import java.lang.ref.SoftReference;
 import java.util.LinkedHashMap;

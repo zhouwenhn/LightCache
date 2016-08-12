@@ -1,4 +1,4 @@
-package com.chowen.lightcache;
+package com.kit.cn.cachelib;
 
 import android.app.Application;
 import android.content.Context;

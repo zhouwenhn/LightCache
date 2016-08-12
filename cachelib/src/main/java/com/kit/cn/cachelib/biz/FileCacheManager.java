@@ -1,14 +1,14 @@
-package com.chowen.lightcache.biz;
+package com.kit.cn.cachelib.biz;
 
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.chowen.lightcache.config.CacheConfig;
-import com.chowen.lightcache.utils.CacheHelper;
-import com.chowen.lightcache.utils.CheckException;
-import com.chowen.lightcache.utils.FileNameGenerator;
+import com.kit.cn.cachelib.config.CacheConfig;
+import com.kit.cn.cachelib.utils.CacheHelper;
+import com.kit.cn.cachelib.utils.CheckException;
+import com.kit.cn.cachelib.utils.FileNameGenerator;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

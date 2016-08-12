@@ -1,4 +1,4 @@
-package com.chowen.lightcache.utils;
+package com.kit.cn.cachelib.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

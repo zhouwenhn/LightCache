@@ -1,10 +1,10 @@
-package com.chowen.lightcache;
+package com.kit.cn.cachelib;
 
 
 import android.util.Log;
 
-import com.chowen.lightcache.biz.FileCacheManager;
-import com.chowen.lightcache.biz.MemoryCacheManager;
+import com.kit.cn.cachelib.biz.FileCacheManager;
+import com.kit.cn.cachelib.biz.MemoryCacheManager;
 
 /**
  * @author zhouwen
