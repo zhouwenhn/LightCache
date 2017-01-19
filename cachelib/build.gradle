@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 23
@@ -21,20 +22,30 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
 }
 
-ext {
-    PUBLISH_GROUP_ID = 'com.chowen.lightcache'  // 填写groupId， 一般是包名，比如：com.android.support
-    //PUBLISH_ARTIFACT_ID = '你的aritfactId'  // //这里不需要再填写，自动以Model的名字作为aritfactId
-    PUBLISH_VERSION = '0.0.2'   // 版本号，比如：22.2.1
-    PUBLISH_DES = 'cache'   // 库的描述尽量不要用中文
-    LIB_NAME = 'LightCache'    // lib名称，比如：My_Lib
-
-    WEBSITE_URL = 'https://github.com/zhouwenhn/LightCache'  // 可以填写github上的库地址.
-    ISSUE_TRACKER_URL = 'https://github.com/zhouwenhn/LightCache/issues' // 可以填写github库的issue地址.
-    VSC_URL = 'https://github.com/zhouwenhn/LightCache'    // 可以填写github上库的地址.
+//添加
+publish {
+    userOrg = 'chowenzhou'//bintray.com用户名
+    groupId = 'com.chowen.lightcache'//jcenter上的路径
+    artifactId = 'LightCache'//项目名称
+    publishVersion = '1.2.0'//版本号
+    desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
+    website = 'https://github.com/zhouwenhn/LightCache'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
 
-// 下面这行请勿修改
-apply from: 'https://raw.githubusercontent.com/andforce/release-android-lib-to-jcenter/master/bintray.gradle'
+//ext {
+//    PUBLISH_GROUP_ID = 'com.chowen.lightcache'  // 填写groupId， 一般是包名，比如：com.android.support
+//    //PUBLISH_ARTIFACT_ID = '你的aritfactId'  // //这里不需要再填写，自动以Model的名字作为aritfactId
+//    PUBLISH_VERSION = '0.0.2'   // 版本号，比如：22.2.1
+//    PUBLISH_DES = 'cache'   // 库的描述尽量不要用中文
+//    LIB_NAME = 'LightCache'    // lib名称，比如：My_Lib
+//
+//    WEBSITE_URL = 'https://github.com/zhouwenhn/LightCache'  // 可以填写github上的库地址.
+//    ISSUE_TRACKER_URL = 'https://github.com/zhouwenhn/LightCache/issues' // 可以填写github库的issue地址.
+//    VSC_URL = 'https://github.com/zhouwenhn/LightCache'    // 可以填写github上库的地址.
+//}
+//
+//// 下面这行请勿修改
+//apply from: 'https://raw.githubusercontent.com/andforce/release-android-lib-to-jcenter/master/bintray.gradle'
