@@ -61,7 +61,7 @@ public class LoadDataManager implements ICacheAble<String, String> {
 
     /**
      * get data from cache
-     * @param key
+     * @param key key
      * @return string
      */
     @Override
